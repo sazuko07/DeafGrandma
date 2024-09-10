@@ -7,7 +7,7 @@ public class DeafGrandmaApp {
 		}
 		private void launch() {
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
-			String greetGrandma = (scanner.nextLine());
+			String greetGrandma = " ";
 			Grandma Grandma = new Grandma();
 			//Prompt user to say something to grandma, and tell user about grandma's hearing problem
 			
