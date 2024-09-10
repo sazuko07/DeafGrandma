@@ -21,6 +21,7 @@ public class Grandma {
 			if (heardGreetGrandma.equals("GOODBYE")) {
 		 		System.out.println("GOODBYE, SONNY!");
 		 		System.out.println("Your visit with granny has ended. ");
+		 		scanner.close();
 		 		System.exit(0);
 			
 		}}
@@ -45,6 +46,7 @@ public class Grandma {
 			if (didntGreetGrandma.equals("GOODBYE")) {
 			 		System.out.println("GOODBYE, SONNY!");
 			 		System.out.println("Your visit with granny has ended. ");
+			 		scanner.close();
 			 		System.exit(0);
 				
 		}}
