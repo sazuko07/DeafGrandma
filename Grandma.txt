@@ -1,4 +1,3 @@
-
 public class Grandma {
 		public String greetGrandma; 
 		 
@@ -29,13 +28,12 @@ public class Grandma {
 				System.out.println(grandmaOtherResponses[secondIndex]);
 		}
 		//method to call true/false on whether grandma hears you depending on what input the user gives
-		public void didGrandmaHearYou() {
+		public boolean didGrandmaHearYou() {
 			if (greetGrandma.equals(greetGrandma.toUpperCase()))
+				didGrandmaHearYou = true; 	
 					grandmaHearsYou();
 			if (!greetGrandma.equals(greetGrandma.toUpperCase()))			
+				didGrandmaHearYou = false;
 					grandmaDoesntHearYou();	
-		}
-		
+		}		
 	}
-	
-			
