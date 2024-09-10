@@ -1,6 +1,6 @@
 
 public class Grandma {
-		public String greetGrandma; 
+		 
 		 
 		 //method for when grandma hears you, gives 1 of 5 random responses
 		public void grandmaHearsYou () {
@@ -29,13 +29,13 @@ public class Grandma {
 				System.out.println(grandmaOtherResponses[secondIndex]);
 		}
 		//method to call true/false on whether grandma hears you depending on what input the user gives
-		public void didGrandmaHearYou() {
+		public void didGrandmaHearYou(String.greetGrandma) {
 			if (greetGrandma.equals(greetGrandma.toUpperCase()))
 					grandmaHearsYou();
 			if (!greetGrandma.equals(greetGrandma.toUpperCase()))			
 					grandmaDoesntHearYou();	
 		}
 		
-	}
+	
 	
 			

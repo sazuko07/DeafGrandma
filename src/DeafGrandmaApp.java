@@ -5,7 +5,7 @@ public class DeafGrandmaApp {
 			DeafGrandmaApp app = new DeafGrandmaApp(); 
 				app.launch();
 		}
-		private void launch() {
+		public void launch() {
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
 			String greetGrandma = " ";
 			Grandma Grandma = new Grandma();
@@ -22,7 +22,7 @@ public class DeafGrandmaApp {
 					greetGrandma = scanner.nextLine();
 					Grandma.didGrandmaHearYou(); 
 		}
-			//while (Grandma.didGrandmaHearYou.equals( false ) && Grandma.greetGrandma 
+			//while (Grandma.didGrandmaHearYou.equals( false ) && Grandma.greetGrandma.equals("GOODBYE")
 				
 			
 			
