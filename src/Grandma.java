@@ -32,6 +32,7 @@ public class Grandma {
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
 			java.util.Random rand = new java.util.Random();
 			String didntGreetGrandma = " ";
+			
 			String grandmaOtherResponses[] = new String[5];
 				grandmaOtherResponses[0] = "WHAT?! SORRY!! YOU'LL HAVE TO SPEAK LOUDER!!";
 				grandmaOtherResponses[1] = "CATS??! WHO'S CATS??!";
@@ -43,29 +44,29 @@ public class Grandma {
 				System.out.println();
 				System.out.println("Could you speak a little louder so grandma can hear you? ");
 				didntGreetGrandma = scanner.next();
-			if (didntGreetGrandma.equals("GOODBYE")) {
+				if (didntGreetGrandma.equals("GOODBYE")) {
 			 		System.out.println("GOODBYE, SONNY!");
 			 		System.out.println("Your visit with granny has ended. ");
 			 		scanner.close();
 			 		System.exit(0);
-				
 		}}
 
 	// method to call true/false on whether grandma hears you depending on what
 	// input the user gives
 	public void didGrandmaHearYou(String greetGrandma) {
-		switch (greetGrandma) {
-		default: 
-			greetGrandma.equals(greetGrandma.toUpperCase());
-			grandmaHearsYou();
-			break; 
-		case (greetGrandma.equalsIgnoreCase()):
+		while (!greetGrandma.equals(greetGrandma.toUpperCase())) {
 			grandmaDoesntHearYou();
-			break; 
 				 
+				 if (!greetGrandma.equals(greetGrandma.toUpperCase()));
+				 grandmaHearsYou();
+				 continue;
+				
+		}
+				
 			 			
 				
 			 			
 		}
 	}
-}
+
+
