@@ -22,9 +22,8 @@ public class DeafGrandmaApp {
 		System.out.println();
 		System.out.println("what would you like to say?: ");
 		greetGrandma = scanner.nextLine();
-		Grandma.didGrandmaHearYou();
+		Grandma.didGrandmaHearYou(greetGrandma);
 	}
-	// while (Grandma.didGrandmaHearYou.equals( false ) &&
-	// Grandma.greetGrandma.equals("GOODBYE")
+	// while (Grandma.didGrandmaHearYou.equals( false ) && Grandma.greetGrandma.equals("GOODBYE")
 
 }

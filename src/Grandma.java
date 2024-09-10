@@ -32,9 +32,10 @@ public class Grandma {
 
 	// method to call true/false on whether grandma hears you depending on what
 	// input the user gives
-	public void didGrandmaHearYou(String.greetGrandma) {
+	public void didGrandmaHearYou(String greetGrandma) {
 			if (greetGrandma.equals(greetGrandma.toUpperCase()))
 					grandmaHearsYou();
 			if (!greetGrandma.equals(greetGrandma.toUpperCase()))			
 					grandmaDoesntHearYou();	
 		}
+}
