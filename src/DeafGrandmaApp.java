@@ -22,7 +22,8 @@ public class DeafGrandmaApp {
 					greetGrandma = scanner.nextLine();
 					Grandma.didGrandmaHearYou(); 
 		}
-			
+			//while (Grandma.didGrandmaHearYou.equals( false ) && Grandma.greetGrandma 
+				
 			
 			
 				 
