@@ -1,22 +1,23 @@
 
 public class Grandma {
-		 
-		 
-		 //method for when grandma hears you, gives 1 of 5 random responses
-		public void grandmaHearsYou () {
-		 {
+
+	// method for when grandma hears you, gives 1 of 5 random responses
+	public void grandmaHearsYou() {
+		{
 			java.util.Random rand = new java.util.Random();
 			String grandmaResponses[] = new String[5];
-				grandmaResponses[0] = "HEY THERE, SONNY!";
-				grandmaResponses[1] = "WHAT'RE YOU LOOKIN' AT??";
-				grandmaResponses[2] = "IT'S BEEN AGES! WHERE'VE YOU BEEN??";
-				grandmaResponses[3] = "FELLOW?? THERE'S NO FELLOW HERE, NOT SINCE GRANPA DIED ";
-				grandmaResponses[4] = "COME ON IN, SWEETIE! WE HAVE COOKIES!";
-				int index = rand.nextInt(grandmaResponses.length);
-				System.out.println(grandmaResponses[index]); 
-		}}
-		//method for when grandma DOESNT hear you, gives 1 of 5 random responses
-		public void grandmaDoesntHearYou () {
+			grandmaResponses[0] = "HEY THERE, SONNY!";
+			grandmaResponses[1] = "WHAT'RE YOU LOOKIN' AT??";
+			grandmaResponses[2] = "IT'S BEEN AGES! WHERE'VE YOU BEEN??";
+			grandmaResponses[3] = "FELLOW?? THERE'S NO FELLOW HERE, NOT SINCE GRANPA DIED ";
+			grandmaResponses[4] = "COME ON IN, SWEETIE! WE HAVE COOKIES!";
+			int index = rand.nextInt(grandmaResponses.length);
+			System.out.println(grandmaResponses[index]);
+		}
+	}
+
+	// method for when grandma DOESNT hear you, gives 1 of 5 random responses
+	public void grandmaDoesntHearYou () {
 		
 			java.util.Random rand = new java.util.Random();
 			String grandmaOtherResponses[] = new String[5];
@@ -28,14 +29,12 @@ public class Grandma {
 				int secondIndex = rand.nextInt(grandmaOtherResponses.length);
 				System.out.println(grandmaOtherResponses[secondIndex]);
 		}
-		//method to call true/false on whether grandma hears you depending on what input the user gives
-		public void didGrandmaHearYou(String.greetGrandma) {
+
+	// method to call true/false on whether grandma hears you depending on what
+	// input the user gives
+	public void didGrandmaHearYou(String.greetGrandma) {
 			if (greetGrandma.equals(greetGrandma.toUpperCase()))
 					grandmaHearsYou();
 			if (!greetGrandma.equals(greetGrandma.toUpperCase()))			
 					grandmaDoesntHearYou();	
 		}
-		
-	
-	
-			
