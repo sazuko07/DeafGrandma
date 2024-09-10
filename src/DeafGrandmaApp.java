@@ -1,17 +1,20 @@
 
 public class DeafGrandmaApp {
-
+	
 	public static void main(String[] args) {
+		
 		DeafGrandmaApp app = new DeafGrandmaApp();
 		app.launch();
 	}
 
 	public void launch() {
+		
+		
+		
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 		String greetGrandma = " ";
 		Grandma Grandma = new Grandma();
-		// Prompt user to say something to grandma, and tell user about grandma's
-		// hearing problem
+		// Prompt user to say something to grandma, and tell user about grandma's hearing problem
 
 		System.out.println("Hello, User! You have decided to visit your sweet old grandma.");
 		System.out.println("However, grandma is pretty hard of hearing, and can only hear you when ");
@@ -23,7 +26,19 @@ public class DeafGrandmaApp {
 		System.out.println("what would you like to say?: ");
 		greetGrandma = scanner.nextLine();
 		Grandma.didGrandmaHearYou(greetGrandma);
-	}
-	// while (Grandma.didGrandmaHearYou.equals( false ) && Grandma.greetGrandma.equals("GOODBYE")
+		scanner.close(); 
+		
+			 
+		
+	
+				
 
-}
+					
+				
+			}
+		
+	}
+	
+	
+
+
