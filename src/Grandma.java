@@ -6,7 +6,7 @@ public class Grandma {
 		
 	// method for when grandma hears you, gives 1 of 5 random responses. system will ask you to continue talking to granny
 	public void grandmaHearsYou() {
-		{
+		
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
 			java.util.Random rand = new java.util.Random();
 			
@@ -22,21 +22,22 @@ public class Grandma {
 			System.out.println("What else would you like to say? ");
 			System.out.println();
 			grandmaHearsYou = scanner.next();
-			if (grandmaHearsYou.equals("GOODBYE")); {
+			if (grandmaHearsYou.equals("GOODBYE")) {
 				System.out.println("GOODBYE, SONNY!");
 				System.out.println("Your conversation with grandma has ended. ");
-				System.exit(0);
-			 	}
-		    while (grandmaHearsYou.equals(grandmaHearsYou.toUpperCase())) {
+			}
+//			else {
+//				whileGrandmaHearsYou ();
+			else if (grandmaHearsYou.equals(grandmaHearsYou.toUpperCase())) {
 				grandmaHearsYou();
 		    	}
-		    	if (grandmaHearsYou.equalsIgnoreCase(grandmaHearsYou)) {
+			else if (grandmaHearsYou.equalsIgnoreCase(grandmaHearsYou)){
 		    		grandmaDoesntHearYou();	
 				}
-		    	
-			}
-	}			
-		
+	}		    	
+			
+				
+			
 			 		
 			
 		
@@ -47,7 +48,7 @@ public class Grandma {
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
 			java.util.Random rand = new java.util.Random();
 			String grandmaDoesntHearYou = " ";
-			grandmaHearsYou = scanner.next();
+			
 		 	String grandmaOtherResponses[] = new String[5];
 				grandmaOtherResponses[0] = "WHAT?! SORRY!! YOU'LL HAVE TO SPEAK LOUDER!!";
 				grandmaOtherResponses[1] = "CATS??! WHO'S CATS??!";
@@ -59,18 +60,24 @@ public class Grandma {
 				System.out.println();
 				System.out.println("Could you speak a little louder so grandma can hear you? ");
 				grandmaDoesntHearYou = scanner.next();
-
-				while (grandmaDoesntHearYou.equals(grandmaDoesntHearYou.toUpperCase())) {
+				if (grandmaDoesntHearYou.equals("GOODBYE")) {
+					System.out.println("GOODBYE, SONNY!");
+					System.out.println("Your conversation with grandma has ended. ");
+				}
+//				else {
+//					whileGrandmaDoesntHearYou();
+				
+					else if (grandmaDoesntHearYou.equals(grandmaDoesntHearYou.toUpperCase())) {
 					grandmaHearsYou();
-				
-					if (grandmaDoesntHearYou.equalsIgnoreCase(grandmaDoesntHearYou)) {
-						continue;
+				}
+					else if (grandmaDoesntHearYou.equalsIgnoreCase(grandmaDoesntHearYou)) {
+						grandmaDoesntHearYou();
 					}
-				
+				}				
 			
 					
-				}
-	}
+				
+	
 				
 			
 		
@@ -92,17 +99,44 @@ public class Grandma {
 			else {
 				grandmaDoesntHearYou();
 			}
-	}
-	
+		}
 }
+
+//public void grandmaGoodBye () {
+//	System.out.println("GOODBYE, SONNY!");
+//	System.out.println("Your conversation with grandma has ended. ");
+//	System.exit(0);
+//}	
+//
+//			
+//public void whileGrandmaHearsYou () {
+//	while (grandmaHearsYou.equals(grandmaHearsYou.toUpperCase())) 
+//		grandmaHearsYou();
+//}
+//    	{
+//    	if (grandmaHearsYou.equalsIgnoreCase(grandmaHearsYou)) {
+//    		grandmaDoesntHearYou();	
+//    	}
+//}    	   	
+//public void whileGrandmaDoesntHearYou () {
+//	while (grandmaDoesntHearYou.equals(grandmaDoesntHearYou.toUpperCase())) {
+//		grandmaHearsYou();
+//	
+//		if (grandmaDoesntHearYou.equalsIgnoreCase(grandmaDoesntHearYou)) {
+//			continue;
+		
+			 
+			 
 			
-			
+		
+	
+
+
 //if (grandmaHearsYou.equals("GOODBYE")); {
 //System.out.println("GOODBYE, SONNY!");
 //System.out.println("Your conversation with grandma has ended. ");
 //System.exit(0);
-//}		
-			
+//}					
 			
 			
 		

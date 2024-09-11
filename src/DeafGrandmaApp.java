@@ -4,10 +4,10 @@ public class DeafGrandmaApp {
 	public static void main(String[] args) {
 		
 		DeafGrandmaApp app = new DeafGrandmaApp();
-		app.launch();
+		app.grandmaApp();
 	}
 
-	public void launch() {
+	public void grandmaApp() {
 		
 		
 		
@@ -16,7 +16,7 @@ public class DeafGrandmaApp {
 		Grandma Grandma = new Grandma();
 		// Prompt user to say something to grandma, and tell user about grandma's hearing problem
 
-		do {
+		
 			
 		System.out.println("Hello, User! You have decided to visit your sweet old grandma.");
 		System.out.println("However, grandma is pretty hard of hearing, and can only hear you when ");
@@ -27,20 +27,23 @@ public class DeafGrandmaApp {
 		System.out.println();
 		System.out.println("what would you like to say?: ");
 		greetGrandma = scanner.nextLine();
-		Grandma.didGrandmaHearYou(greetGrandma);
-		}
-
-		while (greetGrandma.equals("GOODBYE")); 
+		if (greetGrandma.equals("GOODBYE")) { 
 			System.out.println("GOODBYE, SONNY!");
 			System.out.println("Your conversation with grandma has ended. ");
 			System.exit(0);
-		 	
-			if (greetGrandma.equalsIgnoreCase(greetGrandma));
-			Grandma.didGrandmaHearYou(greetGrandma);
-		
-				 
 		}
-	}
+		else  {
+			Grandma.didGrandmaHearYou(greetGrandma);
+		}
+
+
+		}
+//			else { 
+//			Grandma.didGrandmaHearYou(greetGrandma);
+//		}
+//				 
+		}
+	
 	
 		
 
