@@ -4,7 +4,8 @@ public class Grandma {
 
 			
 		
-	// method for when grandma hears you, gives 1 of 5 random responses. system will ask you to continue talking to granny
+	// method for when grandma hears you, gives 1 of 5 random responses. 
+	//system will ask you to continue talking to granny, until you say GOODBYE
 	public void grandmaHearsYou() {
 		
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
@@ -25,9 +26,9 @@ public class Grandma {
 			if (grandmaHearsYou.equals("GOODBYE")) {
 				System.out.println("GOODBYE, SONNY!");
 				System.out.println("Your conversation with grandma has ended. ");
+				System.exit(0);
 			}
-//			else {
-//				whileGrandmaHearsYou ();
+
 			else if (grandmaHearsYou.equals(grandmaHearsYou.toUpperCase())) {
 				grandmaHearsYou();
 		    	}
@@ -43,7 +44,8 @@ public class Grandma {
 		
 	
 
-	// method for when grandma DOESNT hear you, gives 1 of 5 random responses. system will ask you to continue talking to granny
+	// method for when grandma hears you, gives 1 of 5 random responses. 
+	//system will ask you to continue talking to granny, until you say GOODBYE
 	public void grandmaDoesntHearYou () {
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
 			java.util.Random rand = new java.util.Random();
@@ -63,9 +65,9 @@ public class Grandma {
 				if (grandmaDoesntHearYou.equals("GOODBYE")) {
 					System.out.println("GOODBYE, SONNY!");
 					System.out.println("Your conversation with grandma has ended. ");
+					System.exit(0);
 				}
-//				else {
-//					whileGrandmaDoesntHearYou();
+
 				
 					else if (grandmaDoesntHearYou.equals(grandmaDoesntHearYou.toUpperCase())) {
 					grandmaHearsYou();
@@ -76,20 +78,6 @@ public class Grandma {
 				}				
 			
 					
-				
-	
-				
-			
-		
-				
-			
-			 		
-			
-		
-			
-	
-		
-
 	// method to call true/false on whether grandma hears you depending on what
 	// input the user gives
 	public void didGrandmaHearYou(String greetGrandma) {
@@ -101,14 +89,8 @@ public class Grandma {
 			}
 		}
 }
-
-//public void grandmaGoodBye () {
-//	System.out.println("GOODBYE, SONNY!");
-//	System.out.println("Your conversation with grandma has ended. ");
-//	System.exit(0);
-//}	
-//
-//			
+//experimental methods
+		
 //public void whileGrandmaHearsYou () {
 //	while (grandmaHearsYou.equals(grandmaHearsYou.toUpperCase())) 
 //		grandmaHearsYou();
@@ -132,11 +114,7 @@ public class Grandma {
 	
 
 
-//if (grandmaHearsYou.equals("GOODBYE")); {
-//System.out.println("GOODBYE, SONNY!");
-//System.out.println("Your conversation with grandma has ended. ");
-//System.exit(0);
-//}					
+		
 			
 			
 		

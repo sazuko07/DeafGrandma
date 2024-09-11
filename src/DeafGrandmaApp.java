@@ -15,7 +15,7 @@ public class DeafGrandmaApp {
 		
 		Grandma Grandma = new Grandma();
 		// Prompt user to say something to grandma, and tell user about grandma's hearing problem
-
+		//also launches the program into grandma's methods
 		
 			
 		System.out.println("Hello, User! You have decided to visit your sweet old grandma.");
@@ -38,11 +38,8 @@ public class DeafGrandmaApp {
 
 
 		}
-//			else { 
-//			Grandma.didGrandmaHearYou(greetGrandma);
-//		}
-//				 
-		}
+	 
+	}
 	
 	
 		
