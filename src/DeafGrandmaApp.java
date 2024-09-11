@@ -1,6 +1,6 @@
 
 public class DeafGrandmaApp {
-	
+	public String greetGrandma = " ";
 	public static void main(String[] args) {
 		
 		DeafGrandmaApp app = new DeafGrandmaApp();
@@ -12,7 +12,7 @@ public class DeafGrandmaApp {
 		
 		
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
-		String greetGrandma = " ";
+		
 		Grandma Grandma = new Grandma();
 		// Prompt user to say something to grandma, and tell user about grandma's hearing problem
 
@@ -26,18 +26,13 @@ public class DeafGrandmaApp {
 		System.out.println("what would you like to say?: ");
 		greetGrandma = scanner.nextLine();
 		Grandma.didGrandmaHearYou(greetGrandma);
-		scanner.close(); 
 		
-			 
-		
-	
-				
-
-					
-				
-			}
-		
+				 
+		}
 	}
+		
+		
+
 	
 	
 
