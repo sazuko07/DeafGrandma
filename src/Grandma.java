@@ -4,7 +4,7 @@ public class Grandma {
 
 			
 		
-	// method for when grandma hears you, gives 1 of 5 random responses. 
+	// recursive method for when grandma hears you, gives 1 of 5 random responses. 
 	//system will ask you to continue talking to granny, until you say GOODBYE
 	public void grandmaHearsYou() {
 		
@@ -44,7 +44,7 @@ public class Grandma {
 		
 	
 
-	// method for when grandma hears you, gives 1 of 5 random responses. 
+	// recursive method for when grandma doesn't hear you, gives 1 of 5 random responses. 
 	//system will ask you to continue talking to granny, until you say GOODBYE
 	public void grandmaDoesntHearYou () {
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
