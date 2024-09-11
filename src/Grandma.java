@@ -10,7 +10,6 @@ public class Grandma {
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
 			java.util.Random rand = new java.util.Random();
 			
-			
 		 	String grandmaResponses[] = new String[5];
 			grandmaResponses[0] = "HEY THERE, SONNY!";
 			grandmaResponses[1] = "WHAT'RE YOU LOOKIN' AT??";
@@ -23,11 +22,11 @@ public class Grandma {
 			System.out.println("What else would you like to say? ");
 			System.out.println();
 			grandmaHearsYou = scanner.next();
-//			if (grandmaHearsYou.equals("GOODBYE")); {
-//				System.out.println("GOODBYE, SONNY!");
-//				System.out.println("Your conversation with grandma has ended. ");
-//				System.exit(0);
-//			 	}
+			if (grandmaHearsYou.equals("GOODBYE")); {
+				System.out.println("GOODBYE, SONNY!");
+				System.out.println("Your conversation with grandma has ended. ");
+				System.exit(0);
+			 	}
 		    while (grandmaHearsYou.equals(grandmaHearsYou.toUpperCase())) {
 				grandmaHearsYou();
 		    	}
@@ -48,7 +47,7 @@ public class Grandma {
 			java.util.Scanner scanner = new java.util.Scanner(System.in);
 			java.util.Random rand = new java.util.Random();
 			String grandmaDoesntHearYou = " ";
-			
+			grandmaHearsYou = scanner.next();
 		 	String grandmaOtherResponses[] = new String[5];
 				grandmaOtherResponses[0] = "WHAT?! SORRY!! YOU'LL HAVE TO SPEAK LOUDER!!";
 				grandmaOtherResponses[1] = "CATS??! WHO'S CATS??!";
@@ -60,11 +59,7 @@ public class Grandma {
 				System.out.println();
 				System.out.println("Could you speak a little louder so grandma can hear you? ");
 				grandmaDoesntHearYou = scanner.next();
-//				if (grandmaHearsYou.equals("GOODBYE")); {
-//					System.out.println("GOODBYE, SONNY!");
-//					System.out.println("Your conversation with grandma has ended. ");
-//					System.exit(0);
-//				    }
+
 				while (grandmaDoesntHearYou.equals(grandmaDoesntHearYou.toUpperCase())) {
 					grandmaHearsYou();
 				
@@ -98,10 +93,15 @@ public class Grandma {
 				grandmaDoesntHearYou();
 			}
 	}
+	
 }
 			
 			
-		
+//if (grandmaHearsYou.equals("GOODBYE")); {
+//System.out.println("GOODBYE, SONNY!");
+//System.out.println("Your conversation with grandma has ended. ");
+//System.exit(0);
+//}		
 			
 			
 			
