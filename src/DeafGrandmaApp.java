@@ -30,6 +30,7 @@ public class DeafGrandmaApp {
 		if (greetGrandma.equals("GOODBYE")) { 
 			System.out.println("GOODBYE, SONNY!");
 			System.out.println("Your conversation with grandma has ended. ");
+			scanner.close();
 			System.exit(0);
 		}
 		else  {
